@@ -2,7 +2,10 @@ for (var i = 0; i < 8; i++) {
     document.querySelectorAll(".drum")[i].addEventListener("click", handleClick);
 }
 
-
+document.querySelector(".head").addEventListener("click",function(){
+      var p=new Audio("sounds/DRUMS2.wav");
+      p.play();
+});
 
 function handleClick() {
     /* alert("Hello , I got Clicked."); */
